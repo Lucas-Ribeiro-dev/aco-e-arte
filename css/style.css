@@ -430,7 +430,7 @@ ul {
 }
 
 .item-1 {
-  background-image: url('../../imagens/fotos/item-1.jpg');
+  background-image: url('/imagens/fotos/item-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,7 +439,7 @@ ul {
 }
 
 .item-2 {
-  background-image: url('../../imagens/fotos/item-2.jpg');
+  background-image: url('/imagens/fotos/item-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -448,7 +448,7 @@ ul {
 }
 
 .item-3 {
-  background-image: url('../../imagens/fotos/item-3.jpg');
+  background-image: url('/imagens/fotos/item-3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ ul {
 }
 
 .item-4 {
-  background-image: url('../../imagens/fotos/item-4.jpg');
+  background-image: url('/imagens/fotos/item-4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,7 +466,7 @@ ul {
 }
 
 .item-5 {
-  background-image: url('../../imagens/fotos/item-5.jpg');
+  background-image: url('/imagens/fotos/item-5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
