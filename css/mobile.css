@@ -74,23 +74,26 @@
     }
 
     /* Hero section */
-    #hero {
-        height: 90vh;
+    #hero-banner {
+        height: 50dvh;
     }
 
     .banner-text h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
-    .banner-text p {
-        font-size: 1rem;
+    .nav {
+        top: 90%;
     }
 
-    .wpp-button {
-        width: auto;
-        padding: 10px;
-        font-size: 1rem;
+    .prev {
+        left: 30%;
     }
+
+    .next {
+        right: 30%;
+    }
+   
 
     /* Serviços */
     .services-container {
