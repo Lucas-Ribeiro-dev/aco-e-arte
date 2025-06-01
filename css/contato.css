@@ -1,0 +1,215 @@
+:root {
+    /* Cores principais (identidade visual) */
+    --primary-blue: #004B8D;
+    /* Azul escuro da logo */
+    --secondary-blue: #0074D9;
+    /* Azul claro de destaque */
+    --accent-blue: #00AEEF;
+    /* Azul vibrante para botões/ações */
+
+    /* Cores neutras */
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --medium-gray: #cccccc;
+    --dark-gray: #333333;
+
+    /* Cores de suporte */
+    --wpp-dark-green: #075E54;
+    --wpp-green: #25D366;
+    --text: #FFC107;
+
+    /* Backgrounds */
+    --background-light: #f8f9fa;
+    --background-dark: #0c1b2a;
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min(100vh, 100%);
+    margin-top: 103px;
+    padding: min(50px, 5vw) 0;
+}
+
+#contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.subtitulo-pagina {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+#contact-section h2 {
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 8fr 1fr 8fr;
+    justify-content: center;
+    background: var(--dark-gray);
+    width: min(1200px, 95%);
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.contact-container h3 {
+    font-size: 1.5em;
+}
+
+.contact-container p {
+    color: var(--light-gray);
+    font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.contact-container p span {
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+.contact-container a {
+    display: flex;
+    gap: 10px;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contact-container .map {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#vertical-line {
+    width: 1px;
+    background-color: var(--medium-gray);
+    height: 50%;
+    margin: 0 20px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.contact-info img {
+    align-self: center;
+    justify-self: center;
+
+}
+
+.map iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    border: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+#map-btn {
+    width: 40%;
+    background-color: var(--primary-blue);
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.6em 1em;
+    border: 1px solid #000;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease all;
+    z-index: 1;
+}
+
+#map-btn::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--light-gray);
+    z-index: -1;
+}
+#map-btn:hover,
+#map-btn:focus {
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+#map-btn:hover::before,
+#map-btn:focus::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+#map-btn:active {
+    transform: scale(0.9);
+}
+
+
+/* Locais de atendimento */
+#cities {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 40px;
+  background-color: var(--background-light);
+  color: var(--dark-gray);
+
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.cities-text {
+  padding-bottom: 40px;
+}
+
+#cities h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#cities ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  animation: scroll 15s linear infinite;
+  background-color: var(--background-light);
+}
+
+#cities li {
+  display: inline;
+  margin: 0 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Animação do scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

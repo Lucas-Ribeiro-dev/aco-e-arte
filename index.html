@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte & Aço - Calhas e Rufos</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+
+    <header id="navbar">
+        <img src="/imagens/icones/logo-nobg.png" alt="logo da empresa" id="hd-logo">
+
+        <button id="open-sidebar-btn" onclick="openSidebar()">
+            <img src="/imagens/icones/open-menu.svg" alt="Abrir Menu" height="40px" width="40px">
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <button id="close-sidebar-btn" onclick="closeSidebar()">
+                    <img src="/imagens/icones/close-menu.svg" alt="Fechar Menu" height="40px" width="40px">
+                </button>
+                <a href="index.html">Início </a>
+                <a href="#services">Serviços</a>
+                <a href="#portfolio">Galeria </a>
+                <a href="contato.html">Contato </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <section id="hero-banner">
+        <div class="slides-wrapper">
+            <div class="slide">
+                <img src="imagens/fotos/banner1.jpg" alt="Imagem 1" />
+                <div class="banner-text">
+                    <h2>Soluções Rápidas e de Qualidade</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imagens/fotos/item-2.jpg" alt="Imagem 2" />
+                <div class="banner-text">
+                    <h2>Materiais de alta durabilidade</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Setas -->
+        <button class="nav prev">&#10094;</button>
+        <button class="nav next">&#10095;</button>
+
+        <!-- Pontos de navegação -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+
+
+    <!-- <h2>Nossos Serviços</h2> -->
+    <section id="services">
+        
+        <div id="horizontal-line"></div>
+
+        <div class="services-container">
+            <a href="" class="service-box">
+                <img src="/imagens/services/calhas.jpg" alt="Instalação de Calhas">
+                <h3>Instalação de Calhas e Rufos</h3>
+            </a>
+            <a href="" class="service-box">
+                <img src="/imagens/services/limpeza-calhas.jpg" alt="Limpeza de Calhas">
+                <h3>Limpeza e Manutenção</h3>
+            </a>
+            <a href="" class="service-box">
+                <img src="/imagens/services/vedacao.webp" alt="Vedação de Telhados">
+                <h3>Pintura e Vedação</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Lista de Serviços Accordion e sobre nós page -->
+    <section id="accordion-about-us">
+        <div class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>A Arte & Aço é uma empresa especializada em calhas e rufos, com mais de 10 anos de experiência no
+                mercado. Nossa missão é oferecer soluções rápidas e de qualidade para proteger sua casa contra
+                infiltrações e danos causados pela água da chuva.</p>
+            <p>Trabalhamos com materiais de alta durabilidade e contamos com uma equipe de profissionais qualificados,
+                garantindo um serviço eficiente e personalizado para cada cliente.</p>
+        </div>
+        <div class="service-accordion-container">
+            <h2>Nossos Serviços em Detalhes</h2>
+
+            <div class="accordion-box">
+                <div class="accordion-title">Instalação de Rufos e Calhas</div>
+                <div class="accordion-content">
+                    <p>Realizamos a instalação completa de rufos e calhas com precisão e segurança, garantindo o
+                        escoamento adequado da água da chuva. Trabalhamos com materiais de alta durabilidade como chapa
+                        galvanizada, chapa com pintura eletrostática branca ou preta, e também chapa eletrostática
+                        marrom. Esses materiais oferecem resistência à corrosão e um ótimo acabamento estético para sua
+                        construção.</p>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-title">Limpeza e Manutenção</div>
+                <div class="accordion-content">
+                    <p>A limpeza e manutenção periódica de calhas e rufos previne entupimentos, infiltrações e danos
+                        estruturais ao seu imóvel. Esse serviço evita o acúmulo de folhas, sujeiras e resíduos, mantendo
+                        o sistema de drenagem sempre funcional e prolongando a vida útil dos materiais instalados.</p>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-title">Pintura e Vedação</div>
+                <div class="accordion-content">
+                    <p>Oferecemos serviços de pintura protetiva e vedação para calhas, rufos e telhados. A pintura
+                        aumenta a resistência dos materiais às ações do tempo, enquanto a vedação impede vazamentos e
+                        infiltrações, assegurando a proteção da estrutura da sua casa ou empresa. Um serviço essencial
+                        para preservar e valorizar seu imóvel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="horizontal-line"></div>
+    <!-- Selos de garantia e confiança -->
+    <!-- <section id="trust">
+        <h2>
+            Qualidade Garantida!
+        </h2>
+        <div class="line"></div>
+        <div class="trust-container">
+            <figure>
+                <img src="/imagens/icones/pedido.png" alt="Selo 1">
+                <figcaption>Pedido Personalizado</figcaption>
+            </figure>
+            <figure>
+                <img src="/imagens/icones/atendimento-branco.png" alt="Selo 2">
+                <figcaption>Atendimento Rápido</figcaption>
+            </figure>
+            <figure>
+                <img src="/imagens/icones/sertificado.png" alt="Selo 3">
+                <figcaption>Certificação Profissional</figcaption>
+            </figure>
+        </div>
+    </section> -->
+    <!-- História e Garantia -->
+    <!-- <section id="trust">
+        <div class="trust-container">
+            <h2>Quem Somos</h2>
+            <p>
+                A Arte & Aço é uma empresa especializada em calhas e rufos, com mais de 10 anos de experiência no
+                mercado. Nossa missão é oferecer soluções rápidas e de qualidade para proteger sua casa contra
+                infiltrações e danos causados pela água da chuva.
+            </p>
+            <p>
+                Trabalhamos com materiais de alta durabilidade e contamos com uma equipe de profissionais qualificados,
+                garantindo um serviço eficiente e personalizado para cada cliente.
+            </p>
+        </div>
+    </section> -->
+    <!-- portfolio -->
+    <section id="portfolio">
+        <!-- <h2>Nossos Trabalhos</h2> -->
+        <div class="galery">
+            <div class="portfolio-item item-1"></div>
+            <div class="portfolio-item item-2"></div>
+            <div class="portfolio-item item-3"></div>
+            <div class="portfolio-item item-4"></div>
+            <div class="portfolio-item item-5"></div>
+        </div>
+    </section>
+    <!-- Contato -->
+    <!-- <section id="contact">
+        <h2>Entre em contato pelo WhatsApp e peça já seu orçamento!</h2>
+        <h3>Atendimento Rápido e Personalizado</h3>
+    </section> -->
+    <!-- CTA Section -->
+    <!-- <div class="page-bg bg-1"></div> -->
+    <!-- <section id="cta">
+        <div class="cta-text">
+            <h3>Fale com um especialista sobre o que você precisa agora mesmo!</h3>
+            <div class="icon-text">
+                <h2>Não perca mais tempo!</h2>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5561998686829" target="_blank" class="cta-btn">
+            <h3>Pedir Orçamento</h3>
+            <img src="/imagens/icones/right-arrow.png" alt="point">
+        </a>
+    </section> -->
+    <!-- <div class="page-bg bg-2"></div> -->
+    <!-- <div class="line"></div> -->
+    <!-- Formulário de email & mensagem -->
+    <!-- <section id="contact-form">
+        <h2>Quer enviar um email com uma solicitação específica?</h2>
+        <h3>Envie sua mensagem! Retornaremos o mais rápido possível.</h3>
+        <form action="/" method="POST" class="form-container">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="whatsapp">Telefone (WhatsApp):</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Enviar</button>
+        </form>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="cta-text">
+            <h3>Precisando fazer limpeza ou planejamento e instalação de calhas e rufos?</h3>
+            <div class="icon-text">
+                <h2>Agende agora mesmo um orçamento!</h2>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5561998686829" target="_blank" class="cta-btn">
+            <h3>Entre em Contato!</h3>
+            <img src="/imagens/icones/right-arrow.png" alt="point">
+        </a>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/imagens/icones/logo.png" alt="logo da empresa">
+                <p>Arte & Aço - <br>Especialistas em calhas e rufos. <br>Atendimento rápido e serviço de qualidade
+                    para
+                    proteger
+                    o que é importante para você.</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Seções</h3>
+                <div class="footer-nav-items">
+                    <a href="#header">Início</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#portfolio">Galeria </a>
+                    <a href="contato.html">Contato </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/arte_calhaserufos?igsh=MWxnbm1za3hvdDdxbg==" target="_blank">
+                        <img src="/imagens/icones/instagram.png" alt="instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="contact-types">
+                <h3>Contatos</h3>
+                <div class="contact-items">
+                    <p>(61) 9 9868-6829</p>
+                    <p>contato@aco.com</p>
+                </div>
+
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Arte & Aço - Calhas e Rufos. Todos os direitos reservados.</p>
+        <div id="dev-label">
+            <a href="https://wa.me/5561985284448" class="label-txt" target="_blank">
+                ⓒ&nbsp; Lucas Ribeiro Web-Dev
+            </a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp botão flutuante fixo-->
+    <a href="https://api.whatsapp.com/send?phone=5561998686829" target="_blank" id="whatsapp-button">
+        <img src="/imagens/icones/whatsapp.png" alt="WhatsApp Logo">
+    </a>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

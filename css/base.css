@@ -1,0 +1,30 @@
+:root {
+  /* Cores principais (identidade visual) */
+  --primary-blue: #004B8D;
+  --secondary-blue: #0074D9;
+  --accent-blue: #00AEEF;
+
+  /* Cores neutras */
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #cccccc;
+  --dark-gray: #333333;
+
+  /* Cores de suporte */
+  --wpp-dark-green: #075E54;
+  --wpp-green: #25D366;
+  --text: #FFC107;
+
+  /* Backgrounds */
+  --background-light: #f8f9fa;
+  --background-dark: #0c1b2a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
