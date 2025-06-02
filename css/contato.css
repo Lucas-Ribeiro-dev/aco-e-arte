@@ -21,6 +21,16 @@
     /* Backgrounds */
     --background-light: #f8f9fa;
     --background-dark: #0c1b2a;
+
+    /* nova paleta de cores */
+    --logo-white: #e4e4e4;
+    --logo-blue: #182937;
+    --azul-arte: #386fa0;
+    --azul-profundo: #0c345c;
+    --cinza-azulado: #6b7a8d;
+    --marrom-terra: #585246;
+    --branco-neve: #e9f1f6;
+    --grafite: #2c3233;
 }
 
 #contact-section {
@@ -30,16 +40,21 @@
     height: min(100vh, 100%);
     margin-top: 103px;
     padding: min(50px, 5vw) 0;
+    padding-bottom: 0;
 }
 
 #contact-section h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin-bottom: 20px;
 }
+
 .subtitulo-pagina {
     font-size: 1.5em;
-    margin-top: 0;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
+
 #contact-section h2 {
     text-align: center;
 }
@@ -48,7 +63,6 @@
     display: grid;
     grid-template-columns: 8fr 1fr 8fr;
     justify-content: center;
-    background: var(--dark-gray);
     width: min(1200px, 95%);
     box-sizing: border-box;
     padding: 30px;
@@ -59,21 +73,21 @@
 }
 
 .contact-container p {
-    color: var(--light-gray);
+    color: var(--dark-gray);
     font-size: 1.1em;
     line-height: 1.5;
     letter-spacing: 1.5px;
 }
 
 .contact-container p span {
-    color: var(--white);
+    color: #000;
     font-size: 1.1em;
 }
 
 .contact-container a {
     display: flex;
     gap: 10px;
-    color: var(--accent-blue);
+    color: var(--azul-profundo);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -88,7 +102,7 @@
 
 #vertical-line {
     width: 1px;
-    background-color: var(--medium-gray);
+    background-color: #000;
     height: 50%;
     margin: 0 20px;
     justify-self: center;
@@ -99,7 +113,7 @@
 .contact-info {
     display: flex;
     flex-direction: column;
-    color: var(--white);
+    color: var(--dark-gray);
 }
 
 .contact-info img {
@@ -117,7 +131,7 @@
 
 #map-btn {
     width: 40%;
-    background-color: var(--primary-blue);
+    background-color: var(--azul-profundo);
     font-size: 0.8em;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -145,11 +159,13 @@
     background-color: var(--light-gray);
     z-index: -1;
 }
+
 #map-btn:hover,
 #map-btn:focus {
     color: var(--dark-gray);
     cursor: pointer;
 }
+
 #map-btn:hover::before,
 #map-btn:focus::before {
     transition: 0.5s all ease;
@@ -157,59 +173,61 @@
     right: 0;
     opacity: 1;
 }
+
 #map-btn:active {
     transform: scale(0.9);
 }
 
 
+
 /* Locais de atendimento */
 #cities {
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 40px;
-  background-color: var(--background-light);
-  color: var(--dark-gray);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+    background-color: var(--background-light);
+    color: var(--dark-gray);
 
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
 .cities-text {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 #cities h2 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  margin-top: 0;
-  box-sizing: border-box;
-  text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 #cities ul {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  animation: scroll 15s linear infinite;
-  background-color: var(--background-light);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    animation: scroll 15s linear infinite;
+    background-color: var(--background-light);
 }
 
 #cities li {
-  display: inline;
-  margin: 0 50px;
-  font-size: 1.4rem;
-  font-weight: bold;
+    display: inline;
+    margin: 0 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 /* Animação do scroll */
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
 
-  100% {
-    transform: translateX(-50%);
-  }
+    100% {
+        transform: translateX(-50%);
+    }
 }

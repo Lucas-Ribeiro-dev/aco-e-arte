@@ -1,59 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arte & Aço - Calhas e Rufos</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
     <header id="navbar">
         <img src="imagens/icones/logo.jpg" alt="logo da empresa" id="hd-logo">
 
-        <button id="open-sidebar-btn" onclick="openSidebar()">
-            <img src="imagens/icones/open-menu.svg" alt="Abrir Menu" height="40px" width="40px">
+        <button id="open-sidebar-btn" >
+            <img src="imagens/icones/open-menu.png" alt="Abrir Menu" height="30px" width="30px">
         </button>
+
         <nav id="main-nav">
             <ul>
-                <button id="close-sidebar-btn" onclick="closeSidebar()">
-                    <img src="imagens/icones/close-menu.svg" alt="Fechar Menu" height="40px" width="40px">
+                <button id="close-sidebar-btn">
+                    <img src="imagens/icones/close-menu.png" alt="Fechar Menu" height="30px" width="30px">
                 </button>
                 <a href="index.html">Início </a>
-                <a href="index.html#services">Serviços</a>
-                <a href="index.html#portfolio">Galeria </a>
+                <a href="#services">Serviços</a>
+                <a href="galeria.html">Galeria </a>
                 <a href="contato.html">Contato </a>
             </ul>
         </nav>
     </header>
     <!-- Fim do Header -->
-
     <!-- portfolio -->
     <section id="portfolio">
         <h2>Nossos Trabalhos</h2>
         <div class="galery">
-            <div class="portfolio-item item-1">
-                <img src="imagens/fotos/item-1.jpg" alt="" width="100%" height="100%">
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-1.jpg" alt="Trabalho 1" width="100%" height="100%">
             </div>
-            <div class="portfolio-item item-2">
-                <img src="imagens/fotos/item-2.jpg" alt="" width="100%" height="100%">
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-2.jpg" alt="Trabalho 2" width="100%" height="100%">
             </div>
-            <div class="portfolio-item item-3">
-                <img src="imagens/fotos/item-3.jpg" alt="" width="100%" height="100%">
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-3.jpg" alt="Trabalho 3" width="100%" height="100%">
             </div>
-            <div class="portfolio-item item-4">
-                <img src="imagens/fotos/item-4.jpg" alt="" width="100%" height="100%">
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-4.jpg" alt="Trabalho 4" width="100%" height="100%">
             </div>
-            <div class="portfolio-item item-5">
-                <img src="imagens/fotos/item-5.jpg" alt="" width="100%" height="100%">
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-5.jpg" alt="Trabalho 5" width="100%" height="100%">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-6.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-7.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-8.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-9.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagens/fotos/item-10.jpg" alt="" width="100%" height="100%">
             </div>
         </div>
     </section>
-    
+
+    <!-- Overlay para visualização expandida -->
+    <div class="img-overlay" id="imgOverlay" style="display: none;">
+        <img src="" alt="Imagem ampliada" id="overlayImg">
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -88,7 +107,6 @@
                     <p>(61) 9 9868-6829</p>
                     <p>contato@aco.com</p>
                 </div>
-
             </div>
         </div>
         <p class="copyright">&copy; 2025 Arte & Aço - Calhas e Rufos. Todos os direitos reservados.</p>

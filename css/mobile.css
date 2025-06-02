@@ -103,7 +103,7 @@
     .next {
         right: 30%;
     }
-   
+
 
     /* Serviços */
     .services-container {
@@ -119,35 +119,9 @@
         height: 200px;
     }
 
-    /* Garantias */
-    .trust-container {
-        flex-direction: column;
-    }
-
-    .trust-container figure {
-        margin-bottom: 20px;
-    }
-
     /* Portfólio */
-    .galery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 200px);
-    }
 
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5 {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    /* Contato */
-    #contact h2,
-    #contact h3 {
-        font-size: 1.5rem;
-    }
+   
 
     /* CTA Section */
     #cta {
@@ -239,9 +213,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #trust h2 {
-        text-align: center;
-    }
 
     #cities {
         padding: 40px 10px;
@@ -266,4 +237,44 @@
         margin: 0;
     }
 
+}
+
+/* Contato.html */
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .contact-info-text {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .contact-info-text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social-media-contact {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .contact-container {
+        width: 100%;
+    }
+
+    
 }
