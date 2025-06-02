@@ -64,3 +64,6 @@ for (let i = 0; i < accordion.length; i++) {
         this.classList.toggle('active');
     })
 }
+
+
+// Carrossel de Imagens da Página Inicial

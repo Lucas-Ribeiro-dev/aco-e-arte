@@ -13,7 +13,7 @@
 <body>
 
     <header id="navbar">
-        <img src="imagens/icones/logo-nobg.png" alt="logo da empresa" id="hd-logo">
+        <img src="imagens/icones/logo.jpg" alt="logo da empresa" id="hd-logo">
 
         <button id="open-sidebar-btn" onclick="openSidebar()">
             <img src="imagens/icones/open-menu.svg" alt="Abrir Menu" height="40px" width="40px">
@@ -26,13 +26,12 @@
                 </button>
                 <a href="index.html">Início </a>
                 <a href="#services">Serviços</a>
-                <a href="#portfolio">Galeria </a>
+                <a href="galeria.html">Galeria </a>
                 <a href="contato.html">Contato </a>
             </ul>
         </nav>
     </header>
-
-    <div id="overlay" onclick="closeSidebar()"></div>
+    <!-- Fim do Header -->
 
     <section id="hero-banner">
         <div class="slides-wrapper">
@@ -60,8 +59,6 @@
             <span class="dot"></span>
         </div>
     </section>
-
-
 
     <!-- <h2>Nossos Serviços</h2> -->
     <section id="services">
@@ -127,108 +124,49 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
-    <div id="horizontal-line"></div>
-    <!-- Selos de garantia e confiança -->
-    <!-- <section id="trust">
-        <h2>
-            Qualidade Garantida!
-        </h2>
-        <div class="line"></div>
-        <div class="trust-container">
-            <figure>
-                <img src="/imagens/icones/pedido.png" alt="Selo 1">
-                <figcaption>Pedido Personalizado</figcaption>
-            </figure>
-            <figure>
-                <img src="/imagens/icones/atendimento-branco.png" alt="Selo 2">
-                <figcaption>Atendimento Rápido</figcaption>
-            </figure>
-            <figure>
-                <img src="/imagens/icones/sertificado.png" alt="Selo 3">
-                <figcaption>Certificação Profissional</figcaption>
-            </figure>
-        </div>
-    </section> -->
-    <!-- História e Garantia -->
-    <!-- <section id="trust">
-        <div class="trust-container">
-            <h2>Quem Somos</h2>
-            <p>
-                A Arte & Aço é uma empresa especializada em calhas e rufos, com mais de 10 anos de experiência no
-                mercado. Nossa missão é oferecer soluções rápidas e de qualidade para proteger sua casa contra
-                infiltrações e danos causados pela água da chuva.
-            </p>
-            <p>
-                Trabalhamos com materiais de alta durabilidade e contamos com uma equipe de profissionais qualificados,
-                garantindo um serviço eficiente e personalizado para cada cliente.
-            </p>
-        </div>
-    </section> -->
-    <!-- portfolio -->
-    <section id="portfolio">
-        <!-- <h2>Nossos Trabalhos</h2> -->
-        <div class="galery">
-            <div class="portfolio-item item-1">
-                <img src="imagens/fotos/item-1.jpg" alt="" width="100%" height="100%">
+    <!-- Galeria da Página inicial -->
+    <section id="galeria-inicial">
+    <div class="galeria-inicial-carrousel-wrapper">
+        <div class="galeria-inicial-carrousel">
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-1.jpg" alt="Descrição da imagem 1">
             </div>
-            <div class="portfolio-item item-2">
-                <img src="imagens/fotos/item-2.jpg" alt="" width="100%" height="100%">
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-2.jpg" alt="Descrição da imagem 2">
             </div>
-            <div class="portfolio-item item-3">
-                <img src="imagens/fotos/item-3.jpg" alt="" width="100%" height="100%">
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-3.jpg" alt="Descrição da imagem 3">
             </div>
-            <div class="portfolio-item item-4">
-                <img src="imagens/fotos/item-4.jpg" alt="" width="100%" height="100%">
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-4.jpg" alt="Descrição da imagem 4">
             </div>
-            <div class="portfolio-item item-5">
-                <img src="imagens/fotos/item-5.jpg" alt="" width="100%" height="100%">
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-1.jpg" alt="Descrição da imagem 1">
+            </div>
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-2.jpg" alt="Descrição da imagem 2">
+            </div>
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-3.jpg" alt="Descrição da imagem 3">
+            </div>
+            <div class="galeria-inicial-item">
+                <img src="imagens/fotos/item-4.jpg" alt="Descrição da imagem 4">
             </div>
         </div>
-    </section>
-    <!-- Contato -->
-    <!-- <section id="contact">
-        <h2>Entre em contato pelo WhatsApp e peça já seu orçamento!</h2>
-        <h3>Atendimento Rápido e Personalizado</h3>
-    </section> -->
-    <!-- CTA Section -->
-    <!-- <div class="page-bg bg-1"></div> -->
-    <!-- <section id="cta">
-        <div class="cta-text">
-            <h3>Fale com um especialista sobre o que você precisa agora mesmo!</h3>
-            <div class="icon-text">
-                <h2>Não perca mais tempo!</h2>
-            </div>
-        </div>
-        <a href="https://api.whatsapp.com/send?phone=5561998686829" target="_blank" class="cta-btn">
-            <h3>Pedir Orçamento</h3>
-            <img src="/imagens/icones/right-arrow.png" alt="point">
+    </div>
+
+    <div class="fotos-carrossel-cta">
+        <h2>Veja mais fotos dos nossos serviços</h2>
+        <a href="galeria.html" class="carrossel-btn">
+            <h3>Galeria</h3>
+            <img src="imagens/icones/right-arrow.png" alt="Seta para a direita">
         </a>
-    </section> -->
-    <!-- <div class="page-bg bg-2"></div> -->
-    <!-- <div class="line"></div> -->
-    <!-- Formulário de email & mensagem -->
-    <!-- <section id="contact-form">
-        <h2>Quer enviar um email com uma solicitação específica?</h2>
-        <h3>Envie sua mensagem! Retornaremos o mais rápido possível.</h3>
-        <form action="/" method="POST" class="form-container">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="whatsapp">Telefone (WhatsApp):</label>
-            <input type="text" id="whatsapp" name="whatsapp" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit" class="cta-btn">Enviar</button>
-        </form>
-    </section> -->
-
-    <!-- CTA Section -->
+    </div>
+</section>
+    
+    <!-- Contato CTA -->
     <section id="cta">
         <div class="cta-text">
             <h3>Precisando fazer limpeza ou planejamento e instalação de calhas e rufos?</h3>
@@ -238,17 +176,14 @@
         </div>
         <a href="https://api.whatsapp.com/send?phone=5561998686829" target="_blank" class="cta-btn">
             <h3>Entre em Contato!</h3>
-            <img src="imagens/icones/right-arrow.png" alt="point">
         </a>
     </section>
-
-
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="imagens/icones/logo.png" alt="logo da empresa">
+                <img src="imagens/icones/logo.jpg" alt="logo da empresa">
                 <p>Arte & Aço - <br>Especialistas em calhas e rufos. <br>Atendimento rápido e serviço de qualidade
                     para
                     proteger
@@ -277,7 +212,6 @@
                     <p>(61) 9 9868-6829</p>
                     <p>contato@aco.com</p>
                 </div>
-
             </div>
         </div>
         <p class="copyright">&copy; 2025 Arte & Aço - Calhas e Rufos. Todos os direitos reservados.</p>
@@ -293,6 +227,7 @@
         <img src="imagens/icones/whatsapp.png" alt="WhatsApp Logo">
     </a>
 
+    <div id="overlay" onclick="closeSidebar()"></div>
     <script src="js/app.js"></script>
 </body>
 

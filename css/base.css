@@ -18,6 +18,16 @@
   /* Backgrounds */
   --background-light: #f8f9fa;
   --background-dark: #0c1b2a;
+
+  /* nova paleta de cores */
+    --logo-white: #e4e4e4;
+    --logo-blue: #182937;
+    --azul-arte: #386fa0;
+    --azul-profundo: #0c345c;
+    --cinza-azulado: #6b7a8d;
+    --marrom-terra: #585246;
+    --branco-neve: #e9f1f6;
+    --grafite: #2c3233;
 }
 
 html {
@@ -28,3 +38,230 @@ body {
   margin: 0;
 }
 
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  background-color: var(--logo-white);
+  border-bottom: solid 1px var(--medium-gray);
+}
+
+#hd-logo {
+  width: 150px;
+  height: 100%;
+  margin-left: 5dvw;
+  align-self: center;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10dvw;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 40px 30px;
+  font-size: 1.2em;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main-nav a:hover {
+  background-color: var(--logo-blue);
+  color: var(--light-gray);
+  transition: all 0.1s ease-in-out;
+}
+
+
+#open-sidebar-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--dark-gray);
+}
+
+#close-sidebar-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  text-align: left;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-dark);
+  padding: 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 60px 80px;
+  color: var(--light-gray);
+}
+
+.footer-container h3 {
+  font-size: 1.4rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: auto;
+  gap: 20px;
+}
+
+.footer-logo img {
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  justify-self: start;
+}
+
+.footer-logo p {
+  box-sizing: border-box;
+  display: block;
+  width: 90%;
+  height: auto;
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+}
+
+.footer-links,
+.contact-types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-self: center;
+}
+
+.footer-nav-items a {
+  text-decoration: none;
+  color: var(--medium-gray);
+  font-size: 1.2rem;
+}
+
+.footer-nav-items a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-items a:visited,
+.footer-nav-items a:focus,
+.footer-nav-items a:active {
+  color: var(--medium-gray);
+  text-decoration: none;
+}
+
+.social-icons img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.contact-types p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.copyright {
+  justify-self: center;
+  color: var(--light-gray);
+}
+
+
+/* universais */
+/* Botão fixo whats app */
+#whatsapp-button {
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  bottom: 60px;
+  right: 20px;
+  background-color: var(--wpp-green);
+  padding: 20px;
+  border-radius: 60%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+#whatsapp-button:hover {
+  transition: all 0.2s ease-in;
+  background-color: var(--wpp-dark-green);
+}
+
+
+/* Minha WebDev Label */
+#dev-label {
+  width: 100%;
+}
+
+.label-txt {
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 0;
+  color: var(--light-gray);
+  text-decoration: none;
+  opacity: 0.9;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.label-txt a:active,
+.label-txt a:focus {
+  color: var(--light-gray);
+  opacity: 0.9;
+  outline: none;
+}

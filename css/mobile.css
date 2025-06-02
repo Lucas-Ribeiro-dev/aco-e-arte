@@ -21,6 +21,16 @@
     /* Backgrounds */
     --background-light: #f8f9fa;
     --background-dark: #0c1b2a;
+
+    /* nova paleta de cores */
+    --logo-white: #e4e4e4;
+    --logo-blue: #182937;
+    --azul-arte: #386fa0;
+    --azul-profundo: #0c345c;
+    --cinza-azulado: #6b7a8d;
+    --marrom-terra: #585246;
+    --branco-neve: #e9f1f6;
+    --grafite: #2c3233;
 }
 
 @media only screen and (max-width: 768px) {
