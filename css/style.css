@@ -232,7 +232,7 @@
 .accordion-title {
   position: relative;
   padding: 10px 20px;
-  background: var(--cinza-azulado);
+  background: var(--azul-profundo);
   color: var(--white);
   cursor: pointer;
   font-size: 1.3em;
@@ -244,7 +244,7 @@
 .accordion-box.active .accordion-title {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background: var(--azul-profundo);
+  background: var(--cinza-azulado);
   transition: 200ms ease;
 }
 
