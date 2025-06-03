@@ -31,9 +31,12 @@
 }
 
 #portfolio {
+    margin: 0 auto;
   margin-top: 100px;
   padding: 40px 40px;
   text-align: center;
+  height: min(500px, 100%);
+  width: min(1200px, 100%);
 }
 
 #portfolio h2 {
@@ -44,12 +47,12 @@
 
 .galery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
 }
 
 .portfolio-item {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 5 / 4;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -90,7 +93,8 @@
 /* Responsivo para telas pequenas */
 @media only screen and (max-width: 768px) {
   #portfolio {
-    padding: 30px 20px;
+    padding: 30px 10px;
+    box-sizing: border-box;
   }
 
   #portfolio h2 {
@@ -99,7 +103,7 @@
   }
 
   .galery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
